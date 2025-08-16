@@ -1,0 +1,46 @@
+.live_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.live_account {
+  display: flex;
+}
+
+.avator {
+  padding-right: 5px;
+}
+
+.switch_account {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-right:1px solid gray ;
+  border-left:1px solid gray ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.switch_account:hover {
+  color: skyblue;
+}
+
+.live_quit {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.live_quit:hover {
+  color: skyblue;
+}
+
+.tools_title {
+  font-size: 16px;
+  font-weight: 700;
+}

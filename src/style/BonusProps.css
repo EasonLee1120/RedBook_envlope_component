@@ -1,0 +1,20 @@
+.title {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.nameInput {
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+.detail {
+  display: flex;
+}
+
+
+

@@ -1,0 +1,208 @@
+.packet_div {
+  padding: 20px 10px;
+  border: none;
+  border-radius: 64px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 90px;
+}
+
+.packet_div:hover {
+  background-color: #f87a7c; /* 红色背景 */
+}
+
+.packet_icon {
+  font-size: 28px;
+  color: #ff4d4f;
+  margin-bottom: 5px;
+}
+
+.modal {
+  position: absolute;
+  /* 水平居中：左边缘距离窗口50% */
+  left: 50%;
+  /* 垂直居中：上边缘距离窗口50% */
+  top: 50%;
+  /* 反向偏移自身50%，实现真正居中 */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+}
+
+.packet_open, .packet_expired{
+  background-color: #ff4d4f;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #ff4d4f, #f57375);
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.user_icon {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bonus_intro {
+  margin-bottom: 100px;
+  color: #f0f0f0;
+}
+
+.time_display_restTime {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: none;
+}
+
+.time_display_lastTime {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.time_display_finished {
+  background-color: #fab862;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+.time_display_finished .sub {
+  font-size: 18px;
+}
+
+.time_display_finished:hover {
+  background-color: #ff9102;
+}
+
+
+.packet_closed, .expired_close {
+  background-color: white;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.result_open {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #f34649, #f37779);
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.result_intro {
+  margin-bottom: 40px;
+  color: #f0f0f0;
+}
+
+.result_amount {
+  display: flex;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffa600;
+}
+
+.result_amount_yuan {
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 32px;
+  margin-left: 5px;
+}
+
+.result_desc {
+  font-size: 12px;
+  color: #f0d149;
+  margin-bottom: 15px;
+}
+
+.check {
+  font-size: 12px;
+  color: #d4d0d0;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #fa595b;
+  cursor: pointer;
+}
+
+.use {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #f7bd1f, #f8d880);
+}
+
+.use:hover {
+  background: linear-gradient(0deg, #fcbe14, #fad160);
+}
+
+.use_time {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #f0f0f0;
+}
+
+.after_grab_bonus {
+  position: absolute;
+  background-color: black;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  left: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.after_grab_bonus span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.expired_title {
+  font-size: large;
+  color: #f0f0f0;
+}
+
+.expired_desc {
+  font-size: 12px;
+  color: #f0d149;
+  margin-bottom: 70px;
+}
+
+.cryIcon {
+  font-size: 64px;
+  color: #d4d0d0;
+  margin-bottom: 70px;
+}
+

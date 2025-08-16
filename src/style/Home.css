@@ -1,0 +1,47 @@
+.Home {
+  padding: 20px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.Home:hover {
+  background-color: #f87a7c; /* 红色背景 */
+}
+
+.packetSVG {
+  font-size: 28px;
+  padding-bottom: 5px;
+  color: red;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 12px;
+  color: #b8b5b5;;
+}
+
+.switchToPC {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.switchToPC:hover {
+  color: rgb(65, 65, 243);
+}
+

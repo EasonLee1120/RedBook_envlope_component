@@ -1,0 +1,55 @@
+.bonus-container {
+  background-color: #f0f0f0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.create_page_title {
+  display: flex;
+  align-items: center; /* 子元素垂直居中对齐 */
+  justify-content: center; /* 标题水平居中 */
+  position: relative; /* 为返回按钮绝对定位做准备 */
+  height: 40px; /* 固定容器高度，确保垂直居中生效 */
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.bonus-container .back_to_home {
+  font-size: 24px;
+  padding-top: 10px;
+  border: none;
+  cursor: pointer;
+  /* 绝对定位到左侧，不影响标题居中 */
+  position: absolute;
+  left: 10px;
+  top: 50%; /* 垂直居中参考父容器 */
+  transform: translateY(-50%); /* 微调自身位置，实现精确居中 */
+  margin: 0; /* 清除原有的 margin，避免干扰 */
+}
+
+.anchor_title {
+  /* 移除原有的 margin-bottom 和对齐样式，由父容器控制 */
+  margin: 0; /* 清除默认 margin */
+  font-size: 18px; /* 可根据需要调整标题大小 */
+}
+
+.create {
+  width: calc(100% - 40px); /* 100% 父容器宽度 - 左右各20px */
+  position: absolute;
+  left: 20px; /* 与父容器左侧padding对齐 */
+  bottom: 20px; /* 与父容器底部padding对齐 */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4d4f;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box; /* 确保padding不增加宽度 */
+}
+
+
+
+

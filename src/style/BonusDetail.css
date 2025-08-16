@@ -1,0 +1,80 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0; /* 浅灰色，也可以用 gray 或 #ccc 等 */
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.created_top {
+  display: flex;
+  align-items: center; /* 子元素垂直居中对齐 */
+  justify-content: center; /* 标题水平居中 */
+  position: relative; /* 为返回按钮绝对定位做准备 */
+  height: 40px; /* 固定容器高度，确保垂直居中生效 */
+  margin-bottom: 20px; /* 替代原标题的 margin-bottom */
+}
+
+.created_title {
+  /* 移除原有的 margin-bottom 和对齐样式，由父容器控制 */
+  margin: 0; /* 清除默认 margin */
+  font-size: 18px; /* 可根据需要调整标题大小 */
+  padding-top: 10px;
+}
+
+.packetNameDetail {
+  margin: 0 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.packetNumbereDetail {
+  margin: 0 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.reminder {
+  font-size: small;
+  color: #d4d0d0;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d4d0d0;
+}
+
+.return {
+  font-size: 24px;
+  padding-top: 10px;
+  border: none;
+  cursor: pointer;
+  /* 绝对定位到左侧，不影响标题居中 */
+  position: absolute;
+  left: 10px;
+  top: 50%; /* 垂直居中参考父容器 */
+  transform: translateY(-50%); /* 微调自身位置，实现精确居中 */
+  margin: 0; /* 清除原有的 margin，避免干扰 */
+}
+
+.typeBox {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.interface_static {
+    margin: 0; /* 清除默认 margin */
+    font-size: 12px; /* 可根据需要调整标题大小 */
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+
