@@ -1,0 +1,44 @@
+.bonus-type-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bonus-type-selector button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+/* 选中状态样式 */
+.bonus-type-selector button.selected {
+  background-color: #ff4d4f; /* 红色背景 */
+  color: white;
+}
+
+.bonus-type-selector button.created {
+  margin-top: 5px;
+}
+
+.confirmed {
+  width: calc(100% - 40px); /* 100% 父容器宽度 - 左右各20px */
+  position: absolute;
+  left: 20px; /* 与父容器左侧padding对齐 */
+  bottom: 20px; /* 与父容器底部padding对齐 */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4d4f;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box; /* 确保padding不增加宽度 */
+}
+
+
+
+

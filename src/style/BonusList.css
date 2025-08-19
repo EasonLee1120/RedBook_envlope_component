@@ -1,0 +1,95 @@
+.listDiv {
+  display: flex;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 水平偏移 0，垂直偏移 2px，模糊 8px，浅灰色阴影 */
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.left {
+  /* 核心：启用 Flex 布局并垂直居中内容 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直方向居中对齐 */
+  align-items: center;
+  width: 25%;
+  padding: 5px;
+  border-right: 1.5px solid #d1d0d0;
+}
+
+.left .Bonus_money {
+  color: #ff4d4f;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+.left .Bonus_type {
+  color: #ff4d4f;
+  font-size: 12px;
+}
+
+.middle {
+  width: 65%;
+  padding: 10px;
+}
+
+.middle .Bonus_detail {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.middle .Bonus_time_detail {
+  font-size: small;
+  color: #b4b2b2;
+}
+
+.middle .detail_intro {
+  font-size: small;
+  color: #b4b2b2;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直方向居中对齐 */
+  align-items: center;
+  width: 20%;
+}
+
+.right button {
+  border: 1px solid #ff4d4f;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: white;
+  color: #ff4d4f;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* 选中状态样式 */
+.right button:hover {
+  background-color: #ff4d4f; /* 红色背景 */
+  color: white;
+}
+
+.detail-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 水平偏移 0，垂直偏移 2px，模糊 8px，浅灰色阴影 */
+  font-size: 12px;
+  color: #b4b2b2;
+}
