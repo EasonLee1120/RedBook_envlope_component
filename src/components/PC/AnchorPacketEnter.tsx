@@ -1,5 +1,8 @@
 import '../../style/PCStyle/AnchorPacketEnter.css'
 import { Button } from "antd";
+import {useState} from 'react'
+import BonusDetailPC from './BonusDetailForPC/BonusDetailPC'
+
 
 export default function AnchorPacketEnter() {
   const data ={
@@ -24,6 +27,18 @@ export default function AnchorPacketEnter() {
   // 将data对象转为数组，便于遍历
   const dataList = Object.values(data);
 
+  // 弹窗显示逻辑
+  // 定义弹窗显示
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleModalClose = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <div className="container">
       {/* 遍历数据生成盒子 */}
@@ -33,10 +48,11 @@ export default function AnchorPacketEnter() {
           <div className="packet_right">
             <div className="right_title">{item.title}</div>
             <div className="right_desc">{item.desc}</div>
-            {item.title === '主播红包' ? <Button type="primary">立即使用</Button> : <Button type="primary">立即使用</Button>}
+            {item.title === '主播红包' ? <Button type="primary" onClick={handleModalOpen}>立即使用</Button> : <Button type="primary">立即使用</Button>}
           </div>
         </div>
       ))}
+      <BonusDetailPC isModalOpen={isModalOpen} handleModalClose={handleModalClose}/>
     </div>
   );
 }
